@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/normal" android:drawable="@drawable/circle_button_normal"/>
+    <item android:id="@+id/pressed" android:drawable="@drawable/circle_button_pressed"/>
+    <transition android:drawable="@drawable/circle_button_normal" android:fromId="@id/normal" android:toId="@id/pressed"/>
+</animated-selector>

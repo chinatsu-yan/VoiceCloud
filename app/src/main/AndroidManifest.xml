@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 
@@ -14,7 +19,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:name="com.chaquo.python.android.PyApplication">
+
+<!--        <meta-data-->
+<!--            android:name="com.baidu.speech.APP_ID"-->
+<!--            android:value="28759729" />-->
+<!--        &lt;!&ndash; 请填写应用实际的API_KEY &ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="com.baidu.speech.API_KEY"-->
+<!--            android:value="MCPcmj0LZ9o9uApWBEiadAwE" />-->
+<!--        &lt;!&ndash; 请填写应用实际的SECRET_KEY &ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="com.baidu.speech.SECRET_KEY"-->
+<!--            android:value="TFFiycOV64H8SSdNeEiTmCjVyE6lfeI5" />-->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

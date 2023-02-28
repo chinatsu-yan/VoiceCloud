@@ -5,7 +5,7 @@ class SmartData {
     var CurtainsText = ""
     var WateringText = ""
     var DataText = ""
-    var VoiceDataText = ""
+    var VoiceDataText = "长按下方按钮开始录音识别"
 
     fun smartData() {
         val CurtainsNum = 80
@@ -20,7 +20,7 @@ class SmartData {
         val Units = "%" // % 、 分钟
         DataText = "设备：$Equipments | 命令：$Commands | 参数：$Parameters | 单位：$Units"
 
-        val VoiceData = "打开水泵浇水10分钟"
-        VoiceDataText = "$VoiceData"
+//        val VoiceData = "打开水泵浇水10分钟"
+//        VoiceDataText = "$VoiceData"
     }
 }

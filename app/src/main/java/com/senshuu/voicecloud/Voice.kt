@@ -8,7 +8,7 @@ import java.io.*
 class Voice(private val outputFileName: String) {
 
     private val audioSource = MediaRecorder.AudioSource.MIC
-    private val sampleRateInHz = 44100
+    private val sampleRateInHz = 16000
     private val channelConfig = AudioFormat.CHANNEL_IN_MONO
     private val audioFormat = AudioFormat.ENCODING_PCM_16BIT
     private val bufferSizeInBytes = AudioRecord.getMinBufferSize(sampleRateInHz, channelConfig, audioFormat)

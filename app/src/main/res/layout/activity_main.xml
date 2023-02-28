@@ -23,15 +23,6 @@
             android:textColor="@color/white"
             android:textSize="18sp" />
 
-        <com.senshuu.voicecloud.CustomButton
-            android:id="@+id/btnPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/btnRecord"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="24dp"
-            android:text="播放录音" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

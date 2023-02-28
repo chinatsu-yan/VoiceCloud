@@ -1,4 +1,3 @@
-import os
 from aip import AipSpeech
 
 def baidu_Speech_To_Text(filePath):  # 百度语音识别
@@ -8,7 +7,6 @@ def baidu_Speech_To_Text(filePath):  # 百度语音识别
     SECRET_KEY = 'xxx'
     aipSpeech = AipSpeech(APP_ID, API_KEY, SECRET_KEY)  # 初始化AipSpeech对象
     # 读取文件
-    # filePath = os.path.join(context.getFilesDir().getAbsolutePath(), fileName)
     with open(filePath, 'rb') as fp:
         audioPcm = fp.read()
     json = aipSpeech.asr(audioPcm, 'pcm', 16000, {'dev_pid':1537,})

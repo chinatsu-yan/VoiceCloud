@@ -10,10 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
-import com.chaquo.python.PyObject
 import com.senshuu.voicecloud.databinding.ActivityMainBinding
 
-import com.chaquo.python.PyException
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
 import java.io.File
@@ -74,29 +72,6 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
-
-//        val context = this
-//        val fileName = "recording.pcm"
-//        val result = py.getModule("AipSpeech").callAttr("baidu_Speech_To_Text", context, fileName).toString()
-
-//        val module = py.getModule("AipSpeech")
-//        val filePath = File(Environment.getExternalStorageDirectory(), "Android/data/com.senshuu.voicecloud/files/recording.pcm").path
-//        val result = module.callAttr("baidu_Speech_To_Text", filePath)
-//        val file = File(filePath)
-//        if (file.exists()) {
-//            val result = module.callAttr("baidu_Speech_To_Text", filePath)
-//            smartData.VoiceDataText = result.toString()
-//            val voiceDataTextView = findViewById<TextView>(R.id.VoiceDatas)
-//            voiceDataTextView.text = smartData.VoiceDataText
-//
-//        } else {
-//            // Handle the case where the file does not exist
-//        }
-//        smartData.VoiceDataText = result.toString()
-//        runOnUiThread {
-//            findViewById<TextView>(R.id.VoiceDatas).text = smartData.VoiceDataText
-//        }
 
 
     }

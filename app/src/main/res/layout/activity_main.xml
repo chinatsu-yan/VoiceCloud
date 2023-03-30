@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <import type="com.senshuu.voicecloud.SmartData" />
         <variable
             name="smartData"
-            type="SmartData" />
+            type="com.senshuu.voicecloud.SmartData" />
     </data>
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -90,12 +89,12 @@
                             android:textColor="@color/white"/>
 
                         <TextView
+                            android:id="@+id/Watering"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/Watering"
                             android:gravity="center"
                             android:text="@{smartData.WateringText}"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -157,10 +156,47 @@
                             android:text="@{smartData.VoiceDataText}"
                             android:textSize="14sp"/>
 
+
                     </LinearLayout>
+
+
 
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="clip_horizontal"-->
+<!--                    app:cardCornerRadius="4dp"-->
+<!--                    app:cardElevation="4dp"-->
+<!--                    app:cardUseCompatPadding="true">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="16dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/Logs"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="@{smartData.VoiceDataText}"-->
+<!--                            android:textSize="14sp"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+
+<!--                </androidx.cardview.widget.CardView>-->
+<!--            </LinearLayout>-->
+
+
 
         </LinearLayout>
 
